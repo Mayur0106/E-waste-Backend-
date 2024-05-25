@@ -12,7 +12,7 @@ const port = 3000;
 
 // cors
 var corsOptions = {
-    origin: ["http://localhost:3000","https://cr.com"],
+    origin: ["http://localhost:3000"],
     optionsSuccessStatus: 200
 }
 
