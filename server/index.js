@@ -36,12 +36,12 @@ db.sequelize.sync({
 
 // simple route
 app.get('/', (req, res) => {
-    res.send('welcome to e-waste management server! ');
+    res.send('welcome to e-waste management server s ! ');
 });
 
 
 
-// require('./app/routes/auth.routes')(app);
+  require('./app/routes/auth.routes')(app);
 
  //   require('./app/routes/collectorAuth.routes')(app);
  require('./app/routes/forgetPassword.routes')(app);
