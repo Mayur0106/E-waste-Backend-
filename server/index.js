@@ -8,7 +8,7 @@ const http = require('http');
 const socketIo = require('socket.io');
 
 const app = express();
-const port = 3000;
+    //    const port = 3000;
 
 // cors
 var corsOptions = {
