@@ -9,7 +9,7 @@ const getCoordinatesForAddress = require('../util/location');
 exports.signup = async (req, res) => {
     try {
         const validationRules = {
-            centerName: 'required',
+            centerName: 'required', 
             contactPerson: 'required',
             timeFrom: 'required',
             timeTo: 'required',
