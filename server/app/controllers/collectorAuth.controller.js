@@ -2,7 +2,7 @@ const validator = require('../config/validator');
 const db = require('../models');
 const Collector = db.collector;
 const Order = db.order;
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const getCoordinatesForAddress = require('../util/location');
 

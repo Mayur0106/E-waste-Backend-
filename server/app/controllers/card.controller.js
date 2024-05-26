@@ -3,7 +3,7 @@ const validator = require('../config/validator')
 const db = require('../models');
 const Card = db.card;
 const Order = db.order;
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 var jwt = require('jsonwebtoken');
 
 exports.createcard = async (req, res) => {
