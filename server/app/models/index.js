@@ -39,8 +39,11 @@ db.user = require('./user.model.js')(sequelize, Sequelize);  // user model
 db.collector = require('./collector.model.js')(sequelize, Sequelize);   // collector model
 db.order = require('./order.model.js')(sequelize, Sequelize);   // order model
 
+
+db.card = require('./card.model.js')(sequelize, Sequelize); // create card 
+
 db.order.belongsTo(db.user, { as: "user", foreignKey: "userId" });
-db.user.hasMany(db.order, { as: "orders", foreignKey: "userId" });
+ db.user.hasMany(db.order, { as: "orders", foreignKey: "userId" });
 
 db.order.belongsTo(db.collector, { as: "collector", foreignKey: "collectorId" });
 db.collector.hasMany(db.order, { as: "orders", foreignKey: "collectorId" });

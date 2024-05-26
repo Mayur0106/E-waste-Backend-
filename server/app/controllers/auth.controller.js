@@ -2,7 +2,7 @@ const validator = require('../config/validator')
 const db = require('../models');
 const User = db.user;
 const Order = db.order;
-const bcrypt = require('bcryptjs');
+const bcrypt = require('bcrypt');
 var jwt = require('jsonwebtoken');
 
 exports.signup = async (req, res) => {

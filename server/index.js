@@ -41,9 +41,11 @@ app.get('/', (req, res) => {
 
 
 
-  require('./app/routes/auth.routes')(app);
-  require('./app/routes/collectorAuth.routes')(app);
+require('./app/routes/auth.routes')(app);
+require('./app/routes/collectorAuth.routes')(app);
  require('./app/routes/forgetPassword.routes')(app);
+  require('./app/routes/card.routes')(app);
+
 
 // setting port
 const PORT = process.env.PORT || 8080;
